@@ -1,8 +1,25 @@
 aid: verodin
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/verodin.png
 name: Verodin
-description: 'Verodin is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Verodin was a cybersecurity company that pioneered security instrumentation and validation
+  — its Security Instrumentation Platform (SIP) continuously measured, tested, and improved the effectiveness
+  of an organization''s security controls against real attacker behavior (a category later known as breach
+  and attack simulation). Backed by Bessemer Venture Partners and TenEleven Ventures, Verodin was acquired
+  by FireEye in May 2019 for approximately $250 million and rebranded as Mandiant Security Validation.
+  The verodin.com domain still resolves (serving a legacy marketing placeholder) but Verodin no longer
+  operates as an independent company and exposes no public developer or API surface. This profile is
+  retained in the API Evangelist network as a historical portfolio-lead record.'
 url: https://raw.githubusercontent.com/api-evangelist/verodin/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +27,21 @@ x-backed-by:
 - bessemer-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: fireeye
+x-acquired-date: '2019-05-28'
+x-successor: mandiant-security-validation
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Cybersecurity
+- Security Validation
+- Breach and Attack Simulation
+- Security Instrumentation
+- Acquired
+- Mandiant
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/verodin-domain-security.yml
 - type: Website
   url: https://www.verodin.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1

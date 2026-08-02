@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.verodin.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug  5 20:17:52 2026 GMT
+  hsts: null
+domains:
+- domain: verodin.com
+  dnssec: false
+  caa:
+  - 0 issue "amazontrust.com"
+  - 0 issuewild "amazon.com"
+  - 0 issuewild "awstrust.com"
+  - 0 issue "sectigo.com"
+  - 0 issue "letsencrypt.org"
+  - 0 issuewild "letsencrypt.org"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
